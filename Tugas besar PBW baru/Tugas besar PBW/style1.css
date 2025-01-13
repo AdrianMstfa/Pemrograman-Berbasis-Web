@@ -1,0 +1,97 @@
+/* styles.css */
+
+
+.input-section {
+    margin-bottom: 20px;
+    width: 50%;           /* Atur lebar sesuai kebutuhan */
+  margin: 0 auto;       /* Menengahkan secara horizontal */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 16px;
+}
+
+.logout-container {
+    position: relative;
+    top: 50%;
+    right: -800px; /* Jarak dari sisi kanan */
+    transform: translateY(-50%);
+}
+
+.logout-button {
+    padding: 10px 20px;
+    background-color: #dc3545; /* Warna tombol */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4facfe;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #007acc;
+}
+
+.output-section {
+    margin-top: 20px;
+    width: 50%;           /* Atur lebar sesuai kebutuhan */
+  margin: 0 auto;       /* Menengahkan secara horizontal */
+}
+
+.output-section h2 {
+    color: #4facfe;
+    font-size: 18px;
+}
+
+#wind-speed {
+    font-size: 24px;
+    color: #0077ff;
+    margin-top: 10px;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+footer button {
+    background-color: #ff5e57;
+}
+
+footer button:hover {
+    background-color: #d43a31;
+}
+
+@media (max-width: 500px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+}

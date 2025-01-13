@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>windspeed</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    
+    <header class="navbar">
+        <div class="container">
+            <h1 class="logo">windspeed</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#windspeed">Windspeed</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#comments">Comments</a></li>
+                    <div class="logout-container">
+                        <button class="logout-button" onclick="logout()">Logout</button>
+                        
+                    </div>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="F22" style="background-image: url('cuaca\ bg.jpg'); background-size: cover; background-position: center;">
+        <div class="container">
+            <h2>Welcome to WindSpeed</h2>
+            <p>Find the latest wind speed data easily and quickly!</p>
+            <a href="#windspeed" class="cta">Explore Our Solutions</a>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p> Welcome to WindSpeed your trusted platform for real-time wind speed data.
+
+                At WindSpeed, we are dedicated to providing accurate and up-to-date wind speed information to help you make informed decisions. Whether you’re planning outdoor activities, ensuring safety in high-wind conditions, or simply curious about the weather, we’ve got you covered.
+                
+                Using cutting-edge technology and reliable weather data from trusted sources, we deliver a seamless and interactive experience. Our platform is designed to be user-friendly and accessible on both desktop and mobile devices, making it easy for you to stay connected to the latest wind updates anytime, anywhere.
+                
+                Our mission is simple: to empower individuals and communities with precise weather information, ensuring safety, preparedness, and awareness in an ever-changing environment.
+                
+                Thank you for trusting WindSpeed Detector as your weather companion. Together, let’s stay informed and ready for whatever the wind brings.</p>
+        </div>
+    </section>
+
+    <section id="windspeed" class="section">
+    <div class="container">
+        <h2>Windspeed</h2>
+            <div class="input-section">
+                <label for="location">Enter Location:</label>
+                <input type="text" id="location" placeholder="e.g., Jakarta" required>
+                <button id="get-wind-speed">Check Wind Speed</button>
+            </div>
+            <div class="output-section">
+                <h2>Wind Speed:</h2>
+                <p id="wind-speed">--</p>
+            </div>
+    </section>
+
+    <section id="news" class="section">
+        <div class="container">
+            <h2>Latest News</h2>
+            <div class="news-carousel">
+                <div class="news-item">
+                    <h3>Gempa di Jawa Timur</h3>
+                    <p>Gempa Magnitudo 4,4 Guncang Bantul, Terasa hingga Jawa Timur
+                        Gempa bumi berkekuatan 4,4 magnitudo mengguncang Bantul dan dirasakan hingga Jawa Timur. 
+                     </p>
+                    <a href="https://www.detik.com/jogja/berita/d-7728682/gempa-m-4-4-di-perairan-bantul-terasa-hingga-jogja-pacitan" target="_blank">Read More</a>
+                </div>
+                <div class="news-item">
+                    <h3>Kebakaran di Los Angeles</h3>
+                    <p>Kebakaran Los Angeles Hanguskan 35.000 Hektar Lahan, Mengapa Cepat Meluas?
+                        Kebakaran hebat di Los Angeles telah menghanguskan 35.000 hektar lahan. 
+                     </p>
+                    <a href="https://international.sindonews.com/read/1515215/42/mengapa-as-tak-berdaya-hadapi-kebakaran-los-angeles-ini-penjelasannya-1736647295" target="_blank">Read More</a>
+                </div>
+                <div class="news-item">
+                    <h3>Banjir Bandang Terjang Tuban, Akses Jalan ke Bojonegoro Terputus</h3>
+                    <p>Banjir bandang melanda Tuban, Jawa Timur, mengakibatkan akses jalan utama menuju 
+                        Bojonegoro terputus. Warga diimbau untuk berhati-hati dan mencari jalur alternatif.
+                     </p>
+                    <a href="https://jatim.inews.id/berita/banjir-bandang-terjang-rengel-tuban-akses-jalan-ke-bojonegoro-terputus" target="_blank">Read More</a>
+                </div>
+                <div class="news-item">
+                    <h3>Gempa Dahsyat Tibet, 3 Negara Tetangga Ikut Terguncang</h3>
+                    <p>Gempa berkekuatan besar mengguncang wilayah Tibet, dengan getaran dirasakan hingga ke 
+                        tiga negara tetangga. Belum ada laporan resmi mengenai korban jiwa, namun kerusakan infrastruktur dilaporkan signifikan.
+                     </p>
+                    <a href="https://www.bbc.com/indonesia/articles/ckg9ry93m25o" target="_blank">Read More</a>
+                </div>
+                <div class="news-item">
+                    <h3>Petani cabai gagal panen</h3>
+                    <p>Petani Cabai Rawit Alami Gagal Panen Akibat Cuaca Ekstrem
+                        Petani cabai rawit mengalami gagal panen akibat cuaca ekstrem yang melanda beberapa wilayah.</p>
+                    <a href="https://www.tempo.co/arsip/petani-cabai-rawit-alami-gagal-panen-akibat-cuaca-ekstrem-1193025" target="_blank">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="comments" class="section">
+        <div class="container">
+            <h2>Comments</h2>
+            <form id="comment-form">
+                <input type="text" id="comment-author" placeholder="Your Name" required>
+                <textarea id="comment-text" placeholder="Your Comment" required></textarea>
+                <button type="submit">Add Comment</button>
+            </form>
+            <div id="comment-list">
+    
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Windspeed. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="script1.js"></script>
+    <script src="scriptlogout.js"></script>
+</body>
+</html>
